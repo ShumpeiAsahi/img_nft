@@ -11,7 +11,7 @@ contract NewNFT is NFTokenMetadata, Ownable {
         nftSymbol = "SYN";
      }
     
-    //_uriにIPFSのアドレスが入る
+    //_uriにIPFSのアドレスが入るyo
     function mint(address _to ,uint256 _tokenId, string calldata _uri) external onlyOwner{
         super._mint(_to, _tokenId);
         super._setTokenUri(_tokenId, _uri);
